@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <title>Página de registro</title>
+     </head>
+     <style>
+      body{
+            background:#5F9F9F ;
+
+      }
+
+  </style>
+
+     <body>
+         <h3>Página de Registro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jornada:entrada/intervalo-saída/intervalo-volta/saída</h3>
+         <hr>
+         <form action="{{ url_for('registro')}}" method="POST">
+            <table>
+             <tr>
+                <td> Nome</td>
+                <td><input type= "text" name="nome"></td>
+             </tr>
+             <tr>
+                <td> Dia</td>
+                <td><input type= "text" name="dia"></td>
+             </tr>
+             <tr>
+                <td> Jornada</td>
+                <td><input type= "text" name="jornada"></td>
+             </tr>
+             <tr>
+                <td> Hora</td>
+                <td><input type= "text" name="hora"></td>
+             </tr>
+
+            </table> <br>
+            <input type="submit" value="Registrar">
+
+         </form>
+         
+
+     </body>
+
+</html>

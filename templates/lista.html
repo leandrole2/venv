@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <title>Lista com registros</title>
+     </head>
+     <style>
+        body{
+              background:#5F9F9F ;
+
+        }
+
+    </style>
+     <body>
+         <h3>Lista com registros</h3>
+         <hr>
+         <table border="4">
+         <tr>
+              <td> Nome </td>
+              <td> Dia </td>
+              <td> Jornada </td>
+              <td> Hora  </td>
+
+         </tr>
+         
+         
+        {% for pessoa in pessoas %}
+         <tr>
+            <td>{{ pessoa.nome}}</td>
+            <td>{{ pessoa.dia}}</td>
+            <td>{{ pessoa.jornada}}</td>
+            <td>{{ pessoa.hora}}</td>
+           
+         </tr>   
+        {% endfor %}
+           
+         </table>
+         
+
+     </body>
+
+</html>
